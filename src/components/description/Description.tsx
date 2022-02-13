@@ -22,7 +22,7 @@ export const Description = () => {
 
   return (
     <div className="description">
-      <ShowDescriptionButton label={getLabel()} onClick={() => {setIsVisible(!isVisible)}} />
+      <ShowDescriptionButton label={getLabel()} onClick={() => { setIsVisible(!isVisible) }} />
       <div className={getContentsClass()}>
         正規表現で5文字の英単語を検索できます。
         <ul>
@@ -35,6 +35,27 @@ export const Description = () => {
               <li><code>[abc], [a-c]</code> → a, b, cのうち1文字</li>
               <li><code>[^abc], [^a-c]</code> → a, b, c以外の1文字</li>
             </ul>
+          </li>
+        </ul>
+        使用したデータ
+        <ul>
+          <li>
+            単語リスト&nbsp;
+            <a
+              href="https://github.com/cwackerfuss/react-wordle/blob/main/src/constants/wordlist.ts"
+              target="_blank" rel="noopener noreferrer"
+            >
+              github.com/cwackerfuss/react-wordle
+            </a>
+          </li>
+          <li>
+            単語説明&nbsp;
+            <a
+              href="https://github.com/kujirahand/EJDict"
+              target="_blank" rel="noopener noreferrer"
+            >
+              github.com/kujirahand/EJDict
+            </a>
           </li>
         </ul>
       </div>
