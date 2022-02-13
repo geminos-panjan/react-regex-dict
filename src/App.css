@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+:root {
+  --contents-width: 700px;
+  --gray: hsl(0, 0%, 80%);
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body, h1, ul {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  appearance: none;
+}
+
+button, input[type=text] {
+  font-size: inherit;
+}
+
+code {
+  font-family: consolas, monospace;
+  background-color: hsl(0, 0%, 90%);
+  padding: 0 5px;
+}
+
+.header {
+  padding: 7px 30px;
+  background-color: hsl(115, 29%, 53%);
+}
+
+.caption {
+  max-width: var(--contents-width);
+  margin: 0 auto;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px 30px;
+  border: solid var(--gray);
+  border-width: 0.5px 0 0 0;
+}
+
+.invisible {
+  display: none;
+}
+
+.contents {
+  padding: 0 30px;
+  max-width: var(--contents-width);
+  margin: 15px auto;
+  border: solid var(--gray);
+  border-width: 0 0.5px;
+}
+
+.show-description-button,
+.description-contents,
+.search-word-input-text,
+.word-list {
+  padding: 7px 0;
+}
+
+.show-description-button > button {
+  min-width: 130px;
+  padding: 5px;
+  border: 0.5px solid hsl(0, 0%, 50%);
+  border-radius: 100vh;
+  background-color: white;
+}
+
+.show-description-button > button:hover {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.show-description-button > button:active {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.search-word-input-text {
+  display: flex;
+}
+
+.search-word-input-text > div {
+  padding-right: 10px;
+}
+
+.word-element {
+  display: flex;
+  padding: 7px 0;
+  border: solid var(--gray);
+  border-width: 0.5px 0 0 0;
+}
+
+.word-name {
+  min-width: 70px;
+}
