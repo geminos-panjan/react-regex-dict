@@ -12,6 +12,7 @@ function App() {
         <h1 className="caption">Regex Dict</h1>
       </div>
       <div className="contents">
+        <div className="nav"><a href="/">TOP</a></div>
         <Description/>
         <SearchWordInputText value={searchWord} onChange={(e) => { setSearchWord(e.target.value) }} />
         <WordListElement searchWord={searchWord}/>
