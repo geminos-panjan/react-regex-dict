@@ -40,22 +40,29 @@ export const Description = () => {
         使用したデータ
         <ul>
           <li>
-            単語リスト&nbsp;
-            <a
-              href="https://github.com/cwackerfuss/react-wordle/blob/main/src/constants/wordlist.ts"
-              target="_blank" rel="noopener noreferrer"
-            >
-              github.com/cwackerfuss/react-wordle
-            </a>
+            <div className="description-url-container">
+              <div>単語リスト&nbsp;</div>
+              <div>
+                <a
+                  href="https://github.com/cwackerfuss/react-wordle/blob/main/src/constants/wordlist.ts"
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  github.com/cwackerfuss/react-wordle
+                </a>
+              </div>
+            </div>
           </li>
           <li>
-            単語説明&nbsp;
-            <a
-              href="https://github.com/kujirahand/EJDict"
-              target="_blank" rel="noopener noreferrer"
-            >
-              github.com/kujirahand/EJDict
-            </a>
+            <div className="description-url-container">
+              <div>単語説明&nbsp;</div>
+              <div>
+                <a
+                  href="https://github.com/kujirahand/EJDict"
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  github.com/kujirahand/EJDict
+                </a></div>
+              </div>
           </li>
         </ul>
       </div>

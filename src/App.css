@@ -93,8 +93,11 @@ code {
   background-color: hsl(0, 0%, 90%);
 }
 
+.description-url-container,
 .search-word-input-text {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .search-word-input-text > div {
